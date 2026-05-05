@@ -57,7 +57,7 @@ export class Circle implements Figure {
     this.radius = radius;
 
     if (radius <= 0) {
-      throw new Error('your error message');
+      throw new Error('Radius must be greater than 0');
     }
   }
 
@@ -83,7 +83,7 @@ export class Rectangle implements Figure {
     this.height = height;
 
     if (width <= 0 || height <= 0) {
-      throw new Error('your error message');
+      throw new Error('Width and height must be greater than 0');
     }
   }
 
